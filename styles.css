@@ -1,0 +1,127 @@
+:root {
+    --main-font-color: white;
+    
+    --sedan-font-color: #F5A962;
+    --sedan-bg-color: #F5A962;
+
+    --suv-font-color: #5E8B7E;
+    --suv-bg-color: #5E8B7E;
+
+    --luxury-font-color: #2F5D62;
+    --luxury-bg-color: #2F5D62;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+svg, h1, p, button {
+    margin: 1rem;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--main-font-color);
+    
+}
+p, button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+}
+
+p {
+    line-height: 1.5rem;
+    padding-right: 1.3rem;
+    word-spacing: 3px;;
+    margin-bottom: 3.5rem;
+    color: var(--main-font-color);
+}
+
+button {
+    padding: 0.5rem;
+    border-radius: 25px;
+    height: 40px;
+    width: 60%;
+    border: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    line-height: 1.6;
+}
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 23%;
+}
+
+.sedans {
+    background-color: var(--sedan-bg-color);
+}
+
+.sedans button {
+    color: var(--sedan-font-color);
+}
+
+.sedans button:hover {
+    background-color: var(--sedan-font-color);
+    color: white;
+    border: 2px solid white;
+}
+
+.suvs {
+    background-color: var(--suv-bg-color);
+}
+
+.suvs button {
+    color: var(--suv-font-color);
+}
+
+.suvs button:hover {
+    background-color: var(--suv-font-color);
+    color: white;
+    border: 2px solid white;
+}
+
+.luxury {
+    background-color: var(--luxury-bg-color);
+}
+
+.luxury button {
+    color: var(--luxury-font-color);
+}
+
+.luxury button:hover {
+    background-color: var(--luxury-font-color);
+    color: white;
+    border: 2px solid white;
+}
+
+
+.attribution {
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+
+/* @media (max-width: 450px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+    }
+} */
